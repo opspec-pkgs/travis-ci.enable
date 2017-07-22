@@ -1,0 +1,23 @@
+name: github.com/opspec-pkgs/travis-ci.enable
+description: enables travis-ci for a repo
+inputs:
+  githubAccessToken:
+    string:
+      constraints: { minLength: 1 }
+      description: >
+        personal access token for github; see
+        https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/ for how to create a github access token &
+        https://docs.travis-ci.com/user/github-oauth-scopes/ for scopes required by travis ci
+  repo:
+    string:
+      constraints: { minLength: 3 }
+      description: github repo travis ci will be enabled on; formatted as 'YOUR_USER_OR_ORG/YOUR_PROJECT'
+version: 1.0.0
+run:
+  container:
+    image: { ref: 'opspecpkgs/travis-ci.enable:1.0.0' }
+    cmd: [/cmd.sh]
+    files: { /cmd.sh }
+    envVars:
+      githubAccessToken:
+      repo:

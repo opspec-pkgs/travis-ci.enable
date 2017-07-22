@@ -1,0 +1,17 @@
+version: 2
+group_defaults:
+  approve_by_comment:
+    enabled: true
+    approve_regex: ^LGTM
+    reject_regex: ^Rejected
+  reset_on_push:
+    enabled: true
+  author_approval:
+    ignored: true
+  conditions:
+    branches:
+      - master
+groups:
+  reviewers:
+    teams:
+      - maintainers
