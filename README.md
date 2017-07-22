@@ -38,4 +38,4 @@ and [tagged](https://git-scm.com/book/en/v2/Git-Basics-Tagging); see
 
 # Contributing
 
-see [project/CONTRIBUTING.md](https://github.com/opspec-pkgs/project/CONTRIBUTING.md)
+see [project/CONTRIBUTING.md](https://github.com/opspec-pkgs/project/blob/master/CONTRIBUTING.md)
