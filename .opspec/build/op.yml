@@ -10,7 +10,7 @@ inputs:
       default: .
   dockerfile:
     file:
-      default: .opspec/build/Dockerfile
+      default: /Dockerfile
 run:
   serial:
     - op:
