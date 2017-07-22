@@ -29,6 +29,11 @@ run:
       repo:
 ```
 
+# Support
+
+join us on [![Slack](https://opspec-slackin.herokuapp.com/badge.svg)](https://opspec-slackin.herokuapp.com/)
+or [open an issue](https://github.com/opspec-pkgs/travis-ci.enable/issues)
+
 # Releases
 
 releases are versioned according to
