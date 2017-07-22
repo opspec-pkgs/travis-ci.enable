@@ -1,8 +1,8 @@
 [![Build Status](https://travis-ci.org/opspec-pkgs/travis-ci.enable.svg?branch=master)](https://travis-ci.org/opspec-pkgs/travis-ci.enable)
-# problem statement
+# Problem statement
 enables travis-ci for a repo
 
-# example usage
+# Example usage
 
 > note: in examples, VERSION represents a version of the travis-ci.enable pkg
 
