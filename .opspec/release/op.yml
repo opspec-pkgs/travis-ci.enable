@@ -1,0 +1,30 @@
+name: release
+description: releases the package
+inputs:
+  version:
+    string:
+      constraints: { format: semver }
+      default: 0.0.0
+  dockerUsername:
+    string: {}
+  dockerPassword:
+    string: {}
+  pkg:
+    dir:
+      default: .
+run:
+  serial:
+    - op:
+        pkg: { ref: build }
+        inputs:
+          version:
+          pkg:
+        outputs:
+          imageTar:
+    - op:
+        pkg: { ref: github.com/opspec-pkgs/docker.image.push#1.1.0 }
+        inputs:
+          imageTar:
+          imageName: 'opspecpkgs/travis-ci.enable:$(version)'
+          username: $(dockerUsername)
+          password: $(dockerPassword)
