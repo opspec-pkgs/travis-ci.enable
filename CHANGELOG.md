@@ -5,5 +5,10 @@ accordance with [![keepachangelog 1.0.0](https://img.shields.io/badge/keepachang
 
 ## \[Unreleased]
 
+## \[1.0.0] - 2017-12-09
+
+### Fixes
+- [retry](https://github.com/opspec-pkgs/travis-ci.enable/issues/1)
+
 ## \[1.0.0] - 2017-07-22
 
