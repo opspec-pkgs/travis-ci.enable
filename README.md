@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/opspec-pkgs/travis-ci.enable.svg?branch=master)](https://travis-ci.org/opspec-pkgs/travis-ci.enable)
 
+<img src="icon.svg" alt="icon" height="100px">
+
 # Problem statement
 
 enables travis-ci for a repo
