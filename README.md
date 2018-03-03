@@ -6,31 +6,30 @@ enables travis-ci for a repo
 
 # Format
 
-this version of the pkg is in
-[![opspec 0.1.5](https://img.shields.io/badge/opspec-0.1.5-brightgreen.svg?colorA=6b6b6b&colorB=fc16be)](https://opspec.io/0.1.5/packages.html)
-format
+this version of the pkg is in [![opspec 0.1.5](https://img.shields.io/badge/opspec-0.1.5-brightgreen.svg?colorA=6b6b6b&colorB=fc16be)](https://opspec.io/0.1.5/packages.html) format
 
-## install
+# Example usage
+
+## Install
 
 ```shell
 opctl pkg install github.com/opspec-pkgs/travis-ci.enable#1.0.1
 ```
 
-## run
+## Run
 
 ```
 opctl run github.com/opspec-pkgs/travis-ci.enable#1.0.1
 ```
 
-## compose
+## Compose
 
 ```yaml
-run:
-  op:
-    pkg: { ref: github.com/opspec-pkgs/travis-ci.enable#1.0.1 }
-    inputs:
-      githubAccessToken:
-      repo:
+op:
+  pkg: { ref: github.com/opspec-pkgs/travis-ci.enable#1.0.1 }
+  inputs:
+    githubAccessToken:
+    repo:
 ```
 
 # Support
@@ -42,7 +41,7 @@ or
 
 # Releases
 
-releases are 1.0.1ed according to
+releases are versioned according to
 [![semver 2.0.0](https://img.shields.io/badge/semver-2.0.0-brightgreen.svg)](http://semver.org/spec/v2.0.0.html)
 and [tagged](https://git-scm.com/book/en/v2/Git-Basics-Tagging); see
 [CHANGELOG.md](CHANGELOG.md) for release notes
