@@ -13,10 +13,10 @@ inputs:
     string:
       constraints: { minLength: 3 }
       description: github repo travis ci will be enabled on; formatted as 'YOUR_USER_OR_ORG/YOUR_PROJECT'
-version: 1.0.1
+version: 1.1.0
 run:
   container:
-    image: { ref: 'opspecpkgs/travis-ci.enable:1.0.1' }
+    image: { ref: 'opspecpkgs/travis-ci.enable:1.1.0' }
     cmd: [/cmd.sh]
     files: { /cmd.sh }
     envVars:
